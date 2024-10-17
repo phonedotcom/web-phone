@@ -12,6 +12,16 @@ Note: it will request users login to phone.com if a session is not already set.
 This has not yet been tested on non phone.com domains. CORS errors could occur on some fetches. You may need to contact phone.com to have expected domains added to cors response. 
 
 The bulk of the code example is found in the [public/index.html](https://github.com/phonedotcom/web-phone/blob/main/example/public/index.html) 
+## Support Fucntions
+
+| window name               | type                    | Description |
+| -----------               | -----------             | ----------- |
+| window.maximizeWebPhone   | callback function       | function that will be called when the web phone wants to be maximized or in the forground|
+| window.minizeWebPhone     | callback fucntion       | function that will be called when the web phone wants to be minimized, normally only when the minimize button is pressed|
+| window.getLocalContacts   | called fucntion                | function provided by consumer page, allowing seaching of contact name given the entered phone number, this expects a return of a promise with a list `[{name: string, number: 'string', email: 'string', id: 'string'}]`|
+| window.WebPhoneHandler.startCall   | fucntion                | function that will iniate the call on the web phone from the consumer page, ex: `window.WebPhoneHandler.startCall('+155555555555')`|
+
+
 
 ## Available example
 
