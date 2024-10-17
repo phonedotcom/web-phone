@@ -27,9 +27,29 @@
     <title>React App</title>
   </head>
   <body>
+
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="webPhoneRoot"></div>
-    <script src="https://preprod.web-phone.apps.phone.com/2024.10.17@d3de342/index.js"></script>
+    <script src="https://preprod.web-phone.apps.phone.com/2024.10.17@d3de342/index.js">
+          
+    </script>
+    <script> window.minimizeWebPhone = ()=>{alert('minimize pressed')}
+      window.maximizeWebPhone = ()=>{alert('maximize pressed')}
+      window.getLocalContacts = (searchString) => {
+        const output = []
+        return new Promise((resolve)=>{
+          output.push({
+              name: 'example name',
+              number: searchString,
+              email: "example@example.com",
+              id: '1234'
+            })
+           resolve(output)
+        })
+        }</script>
+
+    <iframe src="https://preprod.web-phone.apps.phone.com/2024.10.17@d3de342/index.html" style="bottom:0" frameborder="0"></iframe>
 
     <div id="root"></div>
   </body>
