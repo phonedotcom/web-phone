@@ -8,8 +8,8 @@ Add the following to your web page and the web phone will load.
 <div id="webPhoneRoot"></div>
 <script src="https://preprod.web-phone.apps.phone.com/2024.10.17@d3de342/index.js"></script>
 ```
-Note: it will request users login to phone.com if a sessino is not already set. 
-This has not yet been tested on non phone.com domains. CORS errors could occur on some fetches. You may need to contact phone.com to have extepect domains added to cors response. 
+Note: it will request users login to phone.com if a session is not already set. 
+This has not yet been tested on non phone.com domains. CORS errors could occur on some fetches. You may need to contact phone.com to have expected domains added to cors response. 
 
 ## Available example
 
