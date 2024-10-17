@@ -11,6 +11,8 @@ Add the following to your web page and the web phone will load.
 Note: it will request users login to phone.com if a session is not already set. 
 This has not yet been tested on non phone.com domains. CORS errors could occur on some fetches. You may need to contact phone.com to have expected domains added to cors response. 
 
+The bulk of the code example is found in the [public/index.html](https://github.com/phonedotcom/web-phone/blob/main/example/public/index.html) 
+
 ## Available example
 
 In the example directory, you can run:
