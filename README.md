@@ -17,9 +17,9 @@ The bulk of the code example is found in the [public/index.html](https://github.
 
 | window name               | type                    | Description |
 | -----------               | -----------             | ----------- |
-| window.WebPhoneHandler.maximizeWebPhone   | callback function       | function that will be called when the web phone wants to be maximized or in the forground, for example when there is an incoming call|
-| window.WebPhoneHandler.minimizeWebPhone   | callback fucntion       | function that will be called when the web phone wants to be minimized, normally only when the minimize button is pressed|
-| window.WebPhoneHandler.getLocalContacts   | called fucntion                | function provided by consumer page, allowing seaching of contact name given the entered phone number, this expects a return of a promise with a list `[{name: string, number: 'string', email: 'string', id: 'string'}]`|
+| window.WebPhoneHandler.maximizeWebPhone   | function       | function that will be called when the web phone wants to be maximized or in the forground, for example when there is an incoming call|
+| window.WebPhoneHandler.minimizeWebPhone   | fucntion       | function that will be called when the web phone wants to be minimized, normally only when the minimize button is pressed|
+| window.WebPhoneHandler.getLocalContacts   | fucntion                | function provided by consumer page, allowing seaching of contact name given the entered phone number, this expects a return of a promise with a list `[{name: string, number: 'string', email: 'string', id: 'string'}]`|
 | window.WebPhoneHandler.startCall   | fucntion                | function that will iniate the call on the web phone from the consumer page, ex: `window.WebPhoneHandler.startCall('+155555555555')`|
 
 
